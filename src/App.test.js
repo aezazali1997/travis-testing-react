@@ -12,3 +12,8 @@ test('learning react testing ', () => {
   const linkElement = screen.getByText(/Learning unit tests/i);
   expect(linkElement).toBeInTheDocument();
 });
+test('react testing ', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Hello learning unit testing with piaic/i);
+  expect(linkElement).toBeInTheDocument();
+});
